@@ -21,10 +21,11 @@ class Introduction extends Component {
 
 class Group extends Component {
     render() {
-        return <CardGroup>
-            <Col>{this.props.title}</Col>
+        return <Col>{this.props.title}
+            <CardGroup as="section">
+
             {this.props.children}
-        </CardGroup>;
+        </CardGroup></Col>;
     }
 }
 
