@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button, Card, CardGroup, Col, Container, Jumbotron, Row} from "react-bootstrap";
+import {Button, Card, CardGroup, Col, Container, Jumbotron, Nav, Row} from "react-bootstrap";
 import {Component} from "react";
 
 class Introduction extends Component {
@@ -11,39 +11,45 @@ class Introduction extends Component {
                 Hi, my name is Anh. I'm a software engineer studying at the University of North Carolina at Charlotte.
                 Please hire me!
             </p>
-            <a href="https://linkedin.com/in/anhnguyenq/">LinkedIn</a> | <a href="https://github.com/quynhanh-ngx">GitHub</a>
-            <p>
-                <Button href="mailto:quanh@quanh.org" variant="outline-primary">Contact</Button>
-            </p>
+            <Nav as="ul">
+                <Nav.Item as="li">
+                    <Nav.Link href="https://linkedin.com/in/anhnguyenq/">LinkedIn</Nav.Link>
+                </Nav.Item>
+                <Nav.Item as="li">
+                    <Nav.Link href="https://github.com/quynhanh-ngx">GitHub</Nav.Link>
+                </Nav.Item>
+                <Nav.Item as="li">
+                    <Nav.Link href="mailto:quanh@quanh.org">Contact</Nav.Link>
+                </Nav.Item>
+            </Nav>
         </Jumbotron>;
     }
 }
 
 class Group extends Component {
     render() {
-        return <Col>{this.props.title}
-            <CardGroup as="section">
+        return <Col><h2>{this.props.title}</h2>
+            <Row><CardGroup as="section">
 
             {this.props.children}
-        </CardGroup></Col>;
+        </CardGroup></Row></Col>;
     }
 }
 
 class GroupItem extends Component {
     render() {
-        return <Card>
+        return <div className="col-md-auto py-2"><Card className='border-0'>
             <Card.Body>
                 <Card.Title>
                     {this.props.link ? <a href={this.props.link}>{this.props.title}</a> : this.props.title}
                 </Card.Title>
                 {this.props.subtitle ? <Card.Text>{this.props.subtitle}</Card.Text> : null}
-                {this.props.startDate ? <Card.Text>
-                    {this.props.startDate} -
-                    {this.props.endDate ? <Card.Text>{this.props.endDate}</Card.Text> : "Present"}
-                </Card.Text> : null}
+                {this.props.startDate && this.props.endDate ? <Card.Text>{this.props.startDate + " - " + this.props.endDate}</Card.Text> : null}
+                {this.props.startDate && !this.props.endDate ? <Card.Text>{this.props.startDate + " - Present"}</Card.Text> : null}
                 {this.props.children}
             </Card.Body>
-        </Card>;
+        </Card>
+        </div>
     }
 }
 
@@ -129,6 +135,9 @@ class Work extends Component {
                        startDate="July 2021">
                 <GroupItemChild>
                     Create assignments in Python for Digital Image Processing students
+                </GroupItemChild>
+                <GroupItemChild>
+                    Develop <a href={'https://github.com/quynhanh-ngx/zulip-canvas-alerts'}>a bot</a> to remind students about overdue assignments
                 </GroupItemChild>
             </GroupItem>
             <GroupItem title="CyberSecurity Researcher"
