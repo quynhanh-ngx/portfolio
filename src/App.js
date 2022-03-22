@@ -9,7 +9,12 @@ class Introduction extends Component {
             <h1>Anh Q. Nguyen</h1>
             <p>
                 Hi, my name is Anh. I'm a software engineer studying at the University of North Carolina at Charlotte.
-                Please hire me!
+                I am currently working as an Application Developer at my school and contributing to implementing applications requested by professors and school's partners.
+                I am interested in learning more about software development and how it can be applied to solving real-world problems.
+            </p>
+            <p>
+                <strong>I am open to internship, part-time and full-time opportunities.</strong><br/>
+                <strong>Please hire me!</strong>
             </p>
             <Nav as="ul">
                 <Nav.Item as="li">
@@ -78,12 +83,13 @@ class Education extends Component {
                     GPA: 4.0
                 </GroupItemChild>
                 <GroupItemChild>
-                    Chancellor’s List: Fall 19, Spring 20, Fall 20, Spring 21
+                    Chancellor’s List: Fall 19, Spring 20, Fall 20, Spring 21, Fall 21
                 </GroupItemChild>
                 <GroupItemChild>
                     Relevant coursework: Introduction to Computer Science 1 & 2 (with Java),
                     Computing Professional, Logic & Algorithms, Data Structures, Linear Algebra, Computer Architecture,
-                    Digital Image Processing, Introduction to Artificial Intelligence
+                    Digital Image Processing, Introduction to Artificial Intelligence, Introduction to Database, Software Engineering,
+                    Introduction to Operating Systems and Networking
                 </GroupItemChild>
             </GroupItem>
         </Group>;
@@ -130,9 +136,20 @@ class Projects extends Component {
 class Work extends Component {
     render() {
         return <Group title="Work Experience">
+            <GroupItem title="Application Developer"
+                       subtitle="Technology Solution Office, UNC Charlotte, North Carolina"
+                       startDate="August 2021">
+                <GroupItemChild>
+                    Contributed to designing and implementing a take-home meal program sponsored by Walmart and Cabarrus county to help busy families access to easier and healthier food choices
+                </GroupItemChild>
+                <GroupItemChild>
+                    Develop an affiliation application for UNCC College of Health and Human Services using Laravel, PostgreSQL, JavaScript, and Tailwind CSS
+                </GroupItemChild>
+            </GroupItem>
             <GroupItem title="Teaching Assistant for Digital Image Processing"
                        subtitle="UNC Charlotte, North Carolina"
-                       startDate="July 2021">
+                       startDate="July 2021"
+                       endDate="August 2021">
                 <GroupItemChild>
                     Create assignments in Python for Digital Image Processing students
                 </GroupItemChild>
@@ -142,7 +159,8 @@ class Work extends Component {
             </GroupItem>
             <GroupItem title="CyberSecurity Researcher"
                        subtitle="Electric Power Research Institute, North Carolina"
-                       startDate="May 2021">
+                       startDate="May 2021"
+                       endDate="August 2021">
                 <GroupItemChild>
                     Research and develop technical documentation for system hardening best practices
                 </GroupItemChild>
@@ -153,7 +171,8 @@ class Work extends Component {
             </GroupItem>
             <GroupItem title="Undergraduate Researcher"
                        subtitle="Biological Sciences Department, UNC Charlotte, North Carolina"
-                       startDate="May 2021">
+                       startDate="May 2021"
+                       endDate="August 2021">
                 <GroupItemChild>
                     Combine biological data from multiple large datasets using Python, xarray, and pandas.
                 </GroupItemChild>
