@@ -97,42 +97,6 @@ class Education extends Component {
 }
 
 
-class Projects extends Component {
-    render() {
-        return <Group title="Projects & Awards">
-            <GroupItem title="TriadTransparency" link="https://www.facebook.com/watch/live/?v=3282333825154856">
-                <GroupItemChild>
-                    A customized dashboard to help create transparency and ease of access for minority business owners
-                    to grants and government contracts. Won first place at the 2020 Next in Fintech Community Challenge.
-                </GroupItemChild>
-                <GroupItemChild>
-                    Tech stack: HTML, CSS, JavaScript
-                </GroupItemChild>
-            </GroupItem>
-            <GroupItem title="Twitter Clone" link="https://github.com/quynhanh-ngx/twitter-clone">
-                <GroupItemChild>
-                    A react-based frontend and Django-based backend for a microblogging application complete
-                    with registration, JWT-based authentication, messaging including text, videos, and images, sharing,
-                    and liking posts
-                </GroupItemChild>
-                <GroupItemChild>
-                    Tech stack: React, Django, Python, JavaScript, CSS, HTML, Bootstrap
-                </GroupItemChild>
-            </GroupItem>
-            <GroupItem title="Weather App" link="https://github.com/quynhanh-ngx/weather_app">
-                <GroupItemChild>
-                    A react-based application which allows users to search for weather by city,
-                    using the OpenWeather API for data
-                </GroupItemChild>
-                <GroupItemChild>
-                    Tech stack: React, Python, JavaScript, CSS, HTML, Semantic UI
-                </GroupItemChild>
-            </GroupItem>
-        </Group>;
-    }
-}
-
-
 class Work extends Component {
     render() {
         return <Group title="Work Experience">
@@ -215,6 +179,42 @@ class Work extends Component {
     }
 }
 
+class Projects extends Component {
+    render() {
+        return <Group title="Projects & Awards">
+            <GroupItem title="TriadTransparency" link="https://www.facebook.com/watch/live/?v=3282333825154856">
+                <GroupItemChild>
+                    A customized dashboard to help create transparency and ease of access for minority business owners
+                    to grants and government contracts. Won first place at the 2020 Next in Fintech Community Challenge.
+                </GroupItemChild>
+                <GroupItemChild>
+                    Tech stack: HTML, CSS, JavaScript
+                </GroupItemChild>
+            </GroupItem>
+            <GroupItem title="Twitter Clone" link="https://github.com/quynhanh-ngx/twitter-clone">
+                <GroupItemChild>
+                    A react-based frontend and Django-based backend for a microblogging application complete
+                    with registration, JWT-based authentication, messaging including text, videos, and images, sharing,
+                    and liking posts
+                </GroupItemChild>
+                <GroupItemChild>
+                    Tech stack: React, Django, Python, JavaScript, CSS, HTML, Bootstrap
+                </GroupItemChild>
+            </GroupItem>
+            <GroupItem title="Weather App" link="https://github.com/quynhanh-ngx/weather_app">
+                <GroupItemChild>
+                    A react-based application which allows users to search for weather by city,
+                    using the OpenWeather API for data
+                </GroupItemChild>
+                <GroupItemChild>
+                    Tech stack: React, Python, JavaScript, CSS, HTML, Semantic UI
+                </GroupItemChild>
+            </GroupItem>
+        </Group>;
+    }
+}
+
+
 class Volunteering extends Component {
     render() {
         return <Group title="Volunteer and Community Experience">
@@ -264,8 +264,8 @@ function App() {
     return <Container>
         <Introduction/>
         <Education/>
-        <Projects/>
         <Work/>
+        <Projects/>
         <Volunteering/>
         <Skills/>
     </Container>
