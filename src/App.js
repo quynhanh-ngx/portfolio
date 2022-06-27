@@ -9,7 +9,7 @@ class Introduction extends Component {
             <h1>Anh Q. Nguyen</h1>
             <p>
                 Hi, my name is Anh. I'm a software engineer studying at the University of North Carolina at Charlotte.
-                I am currently working as an Application Developer at my school and contributing to implementing applications requested by professors and school's partners.
+                I am currently working as an Software Engineer at eBay on the Ads team.
                 I am interested in learning more about software development and how it can be applied to solving real-world problems.
             </p>
             <p>
@@ -136,9 +136,14 @@ class Projects extends Component {
 class Work extends Component {
     render() {
         return <Group title="Work Experience">
+            <GroupItem title="Software Engineer Intern"
+                       subtitle="eBay, NYC, New York"
+                       startDate="May 2022">
+            </GroupItem>
             <GroupItem title="Application Developer"
                        subtitle="Technology Solution Office, UNC Charlotte, North Carolina"
-                       startDate="August 2021">
+                       startDate="August 2021"
+                       endDate="May 2022">
                 <GroupItemChild>
                     Contributed to designing and implementing a take-home meal program sponsored by Walmart and Cabarrus county to help busy families access to easier and healthier food choices
                 </GroupItemChild>
