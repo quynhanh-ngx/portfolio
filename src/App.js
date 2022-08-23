@@ -8,8 +8,8 @@ class Introduction extends Component {
         return <Jumbotron>
             <h1>Anh Q. Nguyen</h1>
             <p>
-                Hi, my name is Anh. I'm a software engineer studying at the University of North Carolina at Charlotte.
-                I am currently working as an Software Engineer at eBay on the Ads team.
+                Hi, my name is Anh. I'm a senior studying at the University of North Carolina at Charlotte with a concentration of AI, Robotics, and Gaming.
+                I am currently working as an Software Engineer at eBay on the Ads Core Platform team.
                 I am interested in learning more about software development and how it can be applied to solving real-world problems.
             </p>
             <p>
@@ -103,6 +103,16 @@ class Work extends Component {
             <GroupItem title="Software Engineer Intern"
                        subtitle="eBay, NYC, New York"
                        startDate="May 2022">
+                <GroupItemChild>
+                    Part of Ads - Platform - Core team
+                </GroupItemChild>
+                <GroupItemChild>
+                    Built a tracking aggregation service for collecting and querying the tracking data for an advertising product using Scala, MySQL, and Maven
+                </GroupItemChild>
+                <GroupItemChild>
+                    Obtained 100% test coverage by writing unit, integration, and end-to-end tests using ScalaTest, Mockito, and the H2 database
+                    engine
+                </GroupItemChild>
             </GroupItem>
             <GroupItem title="Application Developer"
                        subtitle="Technology Solution Office, UNC Charlotte, North Carolina"
