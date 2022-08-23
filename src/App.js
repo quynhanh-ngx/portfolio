@@ -8,7 +8,7 @@ class Introduction extends Component {
         return <Jumbotron>
             <h1>Anh Q. Nguyen</h1>
             <p>
-                Hi, my name is Anh. I'm a senior studying at the University of North Carolina at Charlotte with a concentration of AI, Robotics, and Gaming.
+                Hi, my name is Anh. I'm a senior studying Computer Science with a concentration in AI, Robotics, and Gaming at the University of North Carolina at Charlotte.
                 I am currently working as an Software Engineer at eBay on the Ads Core Platform team.
                 I am interested in learning more about software development and how it can be applied to solving real-world problems.
             </p>
